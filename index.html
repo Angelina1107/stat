@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>統計魔法學院證書</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Microsoft JhengHei", serif;
+      background: radial-gradient(ellipse at center, #1a1a2e, #0f0f1a);
+      color: #e6e6fa;
+      margin: 0;
+      padding: 30px 20px;
+      border: 5px double #b8860b;
+      box-shadow: 0 0 25px rgba(255, 215, 0, 0.5);
+      position: relative;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    body::before, body::after {
+      content: "✨";
+      font-size: 40px;
+      position: absolute;
+      animation: sparkle 4s infinite ease-in-out alternate;
+      opacity: 0.6;
+      color: gold;
+    }
+    body::before {
+      top: 10px;
+      left: 15px;
+    }
+    body::after {
+      bottom: 10px;
+      right: 15px;
+    }
+
+    @keyframes sparkle {
+      0% { transform: scale(1) rotate(0deg); opacity: 0.3; }
+      50% { transform: scale(1.5) rotate(180deg); opacity: 1; }
+      100% { transform: scale(1) rotate(360deg); opacity: 0.3; }
+    }
+
+    .title {
+      text-align: center;
+      font-size: 8vw;
+      color: #ffe066;
+      text-shadow: 0 0 10px #ffb347, 0 0 20px #ffdd57;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      text-align: center;
+      font-size: 5vw;
+      color: #ccc;
+      margin-bottom: 30px;
+      font-style: italic;
+    }
+
+    .content {
+      font-size: 4.5vw;
+      line-height: 1.8;
+      color: #f8f8f2;
+      text-align: justify;
+    }
+
+    .content b {
+      color: #ff79c6;
+    }
+
+    .bullet {
+      color: #8be9fd;
+      margin-left: 1.5em;
+    }
+
+    .stat {
+      text-align: center;
+      font-size: 10vw;
+      color: #bd93f9;
+      font-weight: bold;
+      margin: 50px 0;
+      text-shadow: 0 0 10px #8a2be2;
+    }
+
+    .footer {
+      text-align: right;
+      margin-top: 40px;
+      font-size: 4vw;
+      color: #aaa;
+    }
+
+    .credit {
+      text-align: center;
+      font-size: 3.5vw;
+      margin-top: 30px;
+      color: #888;
+    }
+
+    /* 魔法粒子動畫背景 */
+    @keyframes float {
+      0% { transform: translateY(0px); opacity: 0.5; }
+      50% { transform: translateY(-20px); opacity: 1; }
+      100% { transform: translateY(0px); opacity: 0.5; }
+    }
+
+    .magic-orb {
+      position: absolute;
+      border-radius: 50%;
+      background: radial-gradient(circle, #fffa, #ff0a);
+      width: 20px;
+      height: 20px;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    .orb1 { top: 15%; left: 10%; animation-delay: 0s; }
+    .orb2 { top: 35%; left: 80%; animation-delay: 1.5s; }
+    .orb3 { top: 70%; left: 50%; animation-delay: 3s; }
+  </style>
+</head>
+<body>
+  <div class="magic-orb orb1"></div>
+  <div class="magic-orb orb2"></div>
+  <div class="magic-orb orb3"></div>
+
+  <div class="title">🧙‍♂️統計魔法學院🧙‍♂️</div>
+  <div class="subtitle">熬出來的不是學歷，是生命值</div>
+  <div class="content">
+    <p><b>茲此證明：</b><br>
+    台下各位已完成統計系全套精神鍛鍊，擁有穿越數據地獄的堅毅心智，特頒發本證書以資肯定其修煉成果：</p>
+    <ul>
+      <li class="bullet">線性代數：矩陣地獄與特徵值幻覺，成功解密破解咒語。</li>
+      <li class="bullet">機率/統計：熟背分布咒語，p值看穿人性，洞察隨機變數奧秘。</li>
+      <li class="bullet">SAS/R：在錯誤訊息中修煉debug神技，使用哈利波特咒語解bug但無效。</li>
+    </ul>
+    <p>
+      此人具備成為資料分析戰場中，「被爆肝卻微笑分析的快樂工具人」潛力，特授予「統計魔法學院生還者」榮譽證號。
+    </p>
+  </div>
+
+  <div class="stat">STAT</div>
+
+  <div class="footer">
+    簽名：統計全體師長<br>
+    日期：誤差變小的那天
+  </div>
+
+  <div class="credit">
+    【BY 岳暘、若馨、柔瑄、阿郎】
+  </div>
+</body>
+</html>
